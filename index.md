@@ -9,32 +9,10 @@ Thyroid nodules are extremely common in Adults. A very small portion of thyroid 
 
 ### Methods
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Three autoencoders with different structures were used to classify the nodules. An autoencoder is a type of neural network that uses convolutional layers to encode and identify key features of input images, then decodes and reconstructs the image. The mean squared error (MSE) between the input and output image is used to quantify reconstruction error. The autoencoders were trained using only images of benign thyroid nodules. When the autoencoders receive a malignant nodule image, the MSE will be higher. The MSE can be used to classify the image.
 
-```markdown
-Syntax highlighted code block
+### Results
 
-# Header 1
-## Header 2
-### Header 3
+The AUC (area under curve) of a ROC curve is used to measure the performance of the autoencoders with the best possible score of 1. The autoencoders all achieved respectable scores from 0.825 – 0.875. 
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JoeAdams4/Thyroid-Nodule-Autoencoder/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Discussion
