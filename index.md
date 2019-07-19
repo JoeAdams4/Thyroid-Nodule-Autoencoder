@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Thydoid Nodule Classification Using an  Autoencoder
 
 You can use the [editor on GitHub](https://github.com/JoeAdams4/Thyroid-Nodule-Autoencoder/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
