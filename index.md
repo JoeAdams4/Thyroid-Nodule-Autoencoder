@@ -1,10 +1,12 @@
 ## Thydoid Nodule Classification Using an  Autoencoder
 
-You can use the [editor on GitHub](https://github.com/JoeAdams4/Thyroid-Nodule-Autoencoder/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Abstract
+	Thyroid nodules are an extremely common occurrences in adults though only a small portion of these nodules are malignant.. Fine Needle Aspiration (FNA) biopsies are commonly performed to identify malignancy and there is a pressing need for reliable, non-invasive methods to reduce unnecessary FNA procedures. In this study, we explore different architectures of one class autoencoders as a means to make this classification from a dataset of 964 Shear Wave Elastography and B-mode ultrasound images. The different autoencoders were constructed with varying numbers of layers and layer depths and were trained to encode and reconstruct images of benign nodules only. The intention is that images of benign nodules will have a lower reconstruction error than malignant nodules. This reconstruction error can then be used as the test statistic to classify images. The success of each autoencoder was evaluated using the area under a curve (AUC) and accuracy of classification.  The highest AUC achieved was 0.872, with an accuracy of 88.2% for the determination of malignancy. This study demonstrates that autoencoders offer a viable approach for thyroid nodule classification on ultrasound images.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Introduction
+Thyroid nodules are extremely common in Adults. A very small portion of thyroid nodules are malignant. Fine Needle Aspirations biopsies are used to determine malignancy, and there is demand for a non-invasive, reliable classification method to reduce unnecessary FNAs.
 
-### Markdown
+### Methods
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
