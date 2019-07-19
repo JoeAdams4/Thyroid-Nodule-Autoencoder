@@ -15,4 +15,6 @@ Three autoencoders with different structures were used to classify the nodules. 
 
 The AUC (area under curve) of a ROC curve is used to measure the performance of the autoencoders with the best possible score of 1. The autoencoders all achieved respectable scores from 0.825 – 0.875. 
 
+
 ### Discussion
+
