@@ -21,7 +21,7 @@ The metrics used to evaluate the performances of each autoencoder were the area 
 
 The graph below is a histogram for each of the three autoencoders with the mean squared errors for each image tested. It clearly shows there is little to no distinction between the two populations.
 
-![Hist](Autoencoder_Reconstruction_Error_Histograms.svg)
+![Hist](Autoencoder_Reconstruction_Error_Histograms.png)
 
 The figure below is the ROC curves generated for each of the autoencoders. An ideal ROC curve is as close to the upper left corner as possible (Maximize true positives, minimize false positives). 
 
