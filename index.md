@@ -15,10 +15,13 @@ The autoencoders in this study were trained using only benign images. The intent
 
 ### Results
 
-The metrics used to evaluate the performances of each autoencoder were the area under a ROC curve (AUC), the accuracy, and the specificity at 95% sensitivity. The autoencoders originally performed quite well on a very small test set of images achieving the scores discussed in the abstract. However, upon increasing the size of the test set, it was revealed the autoencoders actually performed quite poorly, acheiving AUC scores in the range 0.61-0.64, accuracies of 0.808, and specificities in between 0.11 and 0.21.
+The metrics used to evaluate the performances of each autoencoder were the area under a ROC curve (AUC), the accuracy, and the specificity at 95% sensitivity. The autoencoders originally performed quite well on a very small test set of images achieving the scores discussed in the abstract. However, upon increasing the size of the test set, it was revealed the autoencoders actually performed quite poorly, acheiving AUC scores in the range 0.61-0.64, accuracies of 0.808, and specificities in between 0.11 and 0.21. The scores are summarized in the table below.
 
-![GitHub Logo](Table.png)
+![ResultsTable](Table.png)
+![ROC](Autoencoder_ROC.svg)
+![Hist](Autoencoder_Reconstruction_Error_Histograms.svg)
 
-### Discussion
+
+### Discussions
 
 Although the autoencoder was initially promising, after expanding the test dataset it was discovered that it hardly performed better than guessing. Overall, it's safe to say the future of autoencoders as thyroid classifciation tools seems bleak. Some ways the performance of the autoencoder might improve would be to use a larger training dataset of benign images, or use data augmentation to increase the amount of knowledge the autoencoder could gain from the current dataset. Further, the autoencoder seemed to struggle with the recreation of images with very high pixel values. This resulted in these types of images having the largest mean squared error of all, regardless of malignancy. It is possible that with an alternative metric to analyze reconstruction error there may be an increase in performance.
