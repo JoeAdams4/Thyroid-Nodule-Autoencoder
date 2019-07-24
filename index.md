@@ -9,7 +9,13 @@ Thyroid nodules, are solid fluid filled growths that are extremely common. There
 
 ### Methods
 
-In this study, an autoencoder was chosen as the method of classification. An autoencoder is a type of neural network designed for encoding and compressing images, and then decoding and reconstructing them. The autoencoder recieved a training dataset of images, then using convolutional layers it distinguished important features of images. Using a max pooling technique, the autoencoder simultaneously downsamples the images. Once the images are encoded and downsampled, they are then reconstructed and decoded with the goal of being as close to the original image as possible. Any differences between the input and output images can be considered reconstruction error. To quantify this, the mean squared error is calculated. The autoencoder will change weights within the convolutional layers to minimize mean squared error each time it runs, until it is unable to decrease it any further.
+In this study, an autoencoder was chosen as the method of classification. An autoencoder is a type of neural network designed for encoding and compressing images, and then decoding and reconstructing them. The autoencoder recieved a training dataset of images, then using convolutional layers it distinguished important features of images. Using a max pooling technique, the autoencoder simultaneously downsamples the images. Once the images are encoded and downsampled, they are then reconstructed and decoded with the goal of being as close to the original image as possible. Examples of reconstruction are shown below.
+
+![BenignReconstruction](Ultrasoundimages.png)
+![MalignantReconstruction](Ultrasoundimages2.png)
+
+
+Any differences between the input and output images can be considered reconstruction error. To quantify this, the mean squared error is calculated. The autoencoder will change weights within the convolutional layers to minimize mean squared error each time it runs, until it is unable to decrease it any further.
 
 The autoencoders in this study were trained using only benign images. The intention behind limiting its training is that the autoencoder will be able to reconstruct images of benign nodules more successfully than malignant nodule images. This therefore allows the mean squared error to become a classification variable, where anything above a certain mean sqaured error will be classified malignant, and anything below will be classified as benign.
 
