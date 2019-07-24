@@ -18,8 +18,14 @@ The autoencoders in this study were trained using only benign images. The intent
 The metrics used to evaluate the performances of each autoencoder were the area under a ROC curve (AUC), the accuracy, and the specificity at 95% sensitivity. The autoencoders originally performed quite well on a very small test set of images achieving the scores discussed in the abstract. However, upon increasing the size of the test set, it was revealed the autoencoders actually performed quite poorly, acheiving AUC scores in the range 0.61-0.64, accuracies of 0.808, and specificities in between 0.11 and 0.21. The scores are summarized in the table below.
 
 ![ResultsTable](Table.png)
-![ROC](Autoencoder_ROC.svg)
+
+The graph below is a histogram for each of the three autoencoders with the mean squared errors for each image tested. It clearly shows there is little to no distinction between the two populations.
+
 ![Hist](Autoencoder_Reconstruction_Error_Histograms.svg)
+
+The figure below is the ROC curves generated for each of the autoencoders. An ideal ROC curve is as close to the upper left corner as possible (Maximize true positives, minimize false positives). 
+
+![ROC](Autoencoder_ROC.svg)
 
 
 ### Discussions
